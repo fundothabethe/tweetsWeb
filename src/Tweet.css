@@ -1,0 +1,328 @@
+.frame {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  background: rgba(245, 222, 179, 0.69);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 4;
+}
+nav {
+  margin-left: 0;
+  display: flex;
+}
+nav h1 {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 1rem;
+  border-right: 1px solid rgb(112, 111, 106);
+}
+.profile {
+  display: flex;
+}
+#user-avatar {
+  color: rgb(107, 103, 69);
+  margin: auto 20px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+}
+.profile-info {
+  font-weight: 400;
+}
+.profile p {
+  font-size: 1.1rem;
+  padding: 0%;
+  font-weight: 400;
+  color: black;
+  line-height: 1.7rem;
+  max-height: 100%;
+}
+
+#sign-in {
+  font-size: 0.7rem;
+  box-shadow: -10px 1px 10px rgba(172, 160, 160, 0.5);
+  border: 0px solid black;
+  border-radius: 50px;
+  padding: 6px 20px;
+  background-color: violet;
+  cursor: pointer;
+  background-color: rgba(17, 126, 66, 0.719);
+  z-index: 3;
+}
+#sign-in:hover {
+  background-color: rgba(6, 48, 25, 0.719);
+}
+.sing-in-form {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(46, 46, 46, 0.96);
+  left: 50%;
+  top: 50%;
+  padding: 100px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.sing-in-form h4 {
+  top: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 1rem;
+  padding: 10px 0;
+  margin: 1rem 0;
+}
+.sing-in-form p {
+  border: 0px solid black;
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+  font-size: 1.2rem;
+  background-color: rgb(194, 102, 102);
+  color: rgb(255, 255, 255);
+  line-height: 30px;
+  margin: 10px;
+}
+#filled-basic {
+  margin: 0.2rem 0;
+  width: 600px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+#signIn-button {
+  padding: 10px;
+  width: 100px;
+  color: rgb(255, 245, 245);
+  margin: 30px auto;
+}
+#signIn-button:hover {
+  background: rgb(75, 71, 71);
+}
+#haveAcount {
+  padding: 10px;
+  background: rgb(103, 167, 40);
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  box-shadow: -10px 1px 10px rgba(0, 0, 0, 0.5);
+}
+#haveAcount:hover {
+  cursor: pointer;
+  background: rgb(119, 163, 69);
+}
+.tweet-promo {
+  font-size: 1rem;
+  position: fixed;
+  width: 15vw;
+  right: 20px;
+  top: 150px;
+  box-shadow: -10px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
+  border: 0px solid black;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.822);
+  background-color: rgba(75, 72, 48, 0.292);
+}
+#button {
+  font-size: 0.8rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: -10px 1px 10px rgba(255, 255, 255, 0.5);
+  padding: 6px 24px;
+  border: 0px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgba(17, 126, 66, 0.719);
+  z-index: 4;
+}
+#button:hover {
+  box-shadow: 0px 0px 10px rgba(92, 163, 108, 0.5);
+  background-color: rgb(107, 103, 69);
+}
+#null {
+  display: none;
+}
+.null {
+  display: none;
+}
+#tweetOpened {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.tweet-form {
+  display: flex;
+  width: 70vw;
+  background-color: rgba(206, 206, 206, 0.92);
+  flex-direction: column;
+  border: 0px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: -10px 1px 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+}
+.tweetTextArea {
+  margin: 0%;
+  padding: 0;
+  border: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font: 400;
+  line-height: 40px;
+  font-size: 3em;
+}
+.tweet-form .MuiInputBase-root {
+  height: 100%;
+  width: 100%;
+}
+.post-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#submit-button {
+  width: 150px;
+  color: rgb(31, 85, 87);
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  border: 0px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+#submit-button:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  background-color: rgb(107, 103, 69);
+}
+.picUpload {
+  width: 20vh;
+  color: cornflowerblue;
+  padding: 10px;
+}
+
+/*-------Cards--------*/
+
+.cards {
+  position: relative;
+}
+
+/*---------background-------*/
+
+.anime {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.set {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+}
+.set div {
+  position: absolute;
+  overflow: hidden;
+  display: block;
+}
+.set div:nth-child(1) {
+  left: 20%;
+  animation: animate 20s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(2) {
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -5s;
+}
+.set div:nth-child(3) {
+  left: 70%;
+  animation: animate 20s linear infinite;
+  animation-delay: 0s;
+}
+.set div:nth-child(4) {
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7;
+}
+.set div:nth-child(5) {
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -10;
+}
+.set div:nth-child(6) {
+  left: 90%;
+  animation: animate 25s linear infinite;
+  animation-delay: -15;
+}
+.set div:nth-child(7) {
+  left: 100%;
+  animation: animate 19s linear infinite;
+  animation-delay: -2;
+}
+.set div:nth-child(8) {
+  left: 45%;
+  animation: animate 14s linear infinite;
+  animation-delay: -11;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    top: -10%;
+    transform: translateX((20px)) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(180deg);
+  }
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+  }
+}
+.set2 {
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+}
+.set3 {
+  transform: scale(0.8) rotateX(180deg);
+  filter: blur(1px);
+}

@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+.App {
+  position: relative;
+  width: 100%;
+}
